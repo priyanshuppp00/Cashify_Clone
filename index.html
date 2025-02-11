@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cashify Clone</title>
+  <!-- Site Icon -->
+  <link rel="icon" href="./assets/Images/logoc.png" type="image/png">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <script src="./assets/js/allBar.js" defer></script>
+  <script src="./assets/js/bar.js" defer></script>
+  <script src="./assets/js/mobileService.js" defer></script>
+  <script src="./assets/js/oldDeviceService.js" defer></script>
+  <script src="./assets/js/buyRefurbishedPhones.js" defer></script>
+  <script src="./assets/js/slider.js" defer></script>
+  <script src="./assets/js/script.js" defer></script>
+  <!-- Bootstrap JS & Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./assets/Images/cashify.webp" alt="Logo" class="logo-img">
+      </a>
+      <!-- Navbar Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- Search Bar -->
+        <form class="d-flex position-relative mx-auto search-box">
+          <span class="search-icon"><i class="fas fa-search"></i></span>
+          <input class="form-control search-input" type="search" placeholder="Search for mobiles, accessories & More"
+            aria-label="Search">
+        </form>
+        <!-- Location Dropdown and Login Button -->
+        <div class="d-flex align-items-center ms-auto">
+          <!-- Location Dropdown -->
+          <div class="dropdown me-3">
+            <button class="btn btn-light dropdown-toggle" type="button" id="locationDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fas fa-map-marker-alt me-2"></i> Select City
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="locationDropdown">
+              <li><a class="dropdown-item city-option" href="#">Mumbai</a></li>
+              <li><a class="dropdown-item city-option" href="#">Bangalore</a></li>
+              <li><a class="dropdown-item city-option" href="#">Kolkata</a></li>
+              <li><a class="dropdown-item city-option" href="#">Chennai</a></li>
+              <li><a class="dropdown-item city-option" href="#">Hyderabad</a></li>
+            </ul>
+          </div>
+          <!-- Login and Sign Up Buttons -->
+          <a href="./login.html" class="btn btn-login me-2">Login</a>
+          <a href="./signup.html" class="btn btn-login me-2">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Horizontal line just below the navbar -->
+  <hr class="hr-top">
+
+  <div class="d-flex bar d-none">
+    <!-- Dropdowns will be dynamically loaded here -->
+  </div>
+
+  <hr class="hr-b">
+
+  <div id="carouselExampleIndicators" class="carousel slide img-slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <!-- Indicators will be dynamically loaded here -->
+    </div>
+    <div class="carousel-inner">
+      <!-- Slides will be dynamically loaded here -->
+    </div>
+    <button class="carousel-control-prev custom-carousel-btn" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden hid-btn">Previous</span>
+    </button>
+    <button class="carousel-control-next custom-carousel-btn" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden hid-btn">Next</span>
+    </button>
+  </div>
+
+  <div id="mobileservices" class="container py-5">
+    <h2 class="section-title text-center">Our Services</h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex flex-wrap service-card">
+          <!-- Services will be dynamically loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="oldServices" class="container py-5">
+    <h2 class="section-title text-center">Sell Your Old Device Now</h2>
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex flex-wrap service-device">
+          <!-- Old devices will be dynamically loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="buyrefurbishedphones" class="container my-4">
+    <div class="d-flex justify-content-between align-items-center">
+      <h2>Buy Refurbished Phones</h2>
+      <a href="#" class="text-primary">View All</a>
+    </div>
+    <div class="position-relative">
+      <div class="d-flex overflow-hidden" id="refurbishedPhonesCarousel">
+        <!-- Refurbished phones will be dynamically loaded here -->
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer class="footer bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Logo & Social Icons -->
+        <div class="col-md-4 text-center mb-3 mb-md-0">
+          <img src="./assets/Images/cashify.webp" alt="Cashify Logo" class="footer-logo">
+          <div class="social-icons mt-3">
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
+              <h5>Services</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Sell Phone</a></li>
+                <li><a href="#">Sell Television</a></li>
+                <li><a href="#">Sell Smart Watch</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Articles</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3 mb-md-0">
+              <h5>Help & Support</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+              <h5>More Info</h5>
+              <ul class="list-unstyled">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+              <button class="btn btn-primary mt-3 w-100" id="chatButton">Chat with Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <!-- Footer Bottom -->
+      <div class="row text-center">
+        <div class="col-md-6 mb-3 mb-md-0">
+          <p>Registered Office: Manak Waste Management Pvt Ltd., New Delhi</p>
+        </div>
+        <div class="col-md-6">
+          <p>Safeguarded by DeviceSafety.org</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chatbox -->
+  <div id="chatbox" class="chatbox">
+    <div class="chat-header">
+      <span>Chat with Us</span>
+      <button class="close-chat" style="color: red;">&times;</button>
+    </div>
+    <div class="chat-body">
+      <p>Hello! How can we help you today?</p>
+      <button class="suggestion" onclick="sendMessage('Sell Phone')">Sell Phone</button>
+      <button class="suggestion" onclick="sendMessage('Contact Support')">Contact Support</button>
+      <button class="suggestion" onclick="sendMessage('More Info')">More Info</button>
+    </div>
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS & Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/footer.js"></script>
+</body>
+
+</html>

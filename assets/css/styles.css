@@ -1,0 +1,423 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.logo-img {
+  width: 130px;
+}
+
+.search-box {
+  width: 60%;
+  background: #ebebeb;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.search-input {
+  padding: 8px;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: #ebebeb;
+}
+
+.search-input:focus {
+  background: #ebebeb;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.search-icon {
+  position: absolute;
+  font-size: large;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c757d;
+}
+
+.btn-city {
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.btn-login {
+  padding: 5px;
+  width: 100px;
+  background-color: #42c8b7;
+  color: white;
+  font-weight: 500;
+}
+
+.btn-login:hover {
+  background-color: #42c8b7;
+  color: white;
+  font-weight: 400;
+}
+
+.hr-top {
+  margin-top: -5px;
+  border: 1px solid black;
+}
+
+.hr-b {
+  margin-top: 7px;
+  border: 1px solid black;
+}
+
+.btn-category {
+  margin-left: 60px;
+  border-radius: 5px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn-category:hover {
+  color: #42c8b7;
+}
+
+.sell-line {
+  font-size: 15px;
+  margin-left: 10px;
+  color: #a8a3a3;
+}
+
+.dropdown-menu {
+  margin-left: 20px;
+  display: none;
+  position: absolute;
+  min-width: 250px;
+  background: white;
+  border: 1px solid #ddd;
+  font-size: 14px; /* Smaller font size */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.phone-category-dropdown:hover > .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu:hover > .submenu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-submenu .submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: -3px;
+  min-width: 180px;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.dropdown-item:hover,
+.dropdown-submenu:hover > .dropdown-item {
+  color: #42c8b7;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
+
+.sellline {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.topbrand {
+  font-size: 16px;
+  color: #141515;
+  font-weight: 500;
+}
+
+.right-arrow {
+  float: right;
+  font-size: 20px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.dropdown-item {
+  margin-left: 5px;
+}
+
+.img-slide {
+  cursor: pointer;
+}
+
+.carousel-item img {
+  width: 100%; /* Full width for responsiveness */
+ height: 350px;
+  object-fit: cover; /* Ensures the image scales and crops correctly */
+}
+.custom-carousel-btn {
+  top: 50%;
+  width: 50px; /* Button width */
+  height: 50px; /* Button height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+  position: absolute;
+  transform: translateY(-50%);
+  z-index: 10; /* Ensure buttons are on top */
+  background: transparent; /* Transparent background */
+  border: none; /* Remove border */
+}
+
+
+.custom-carousel-btn i {
+  font-size: 2rem; /* Increase icon size */
+  color: #000; /* Icon color */
+}
+
+#prevButton {
+  left: 0;
+}
+
+#nextButton {
+  right: 0;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  margin: 10px;
+}
+
+.service-item img {
+  width: 120px;
+  height: auto;
+  padding: 10px;
+}
+
+.service-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+}
+
+.service-deviceitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  margin: 5px;
+}
+
+.service-device img {
+  width: 90px;
+  height: auto;
+}
+
+.service-device {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#prevButton {
+  left: -40px;
+}
+
+#nextButton {
+  right: -40px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-off {
+  color: red;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card-price {
+  font-weight: 500;
+  color: rgb(20, 19, 19);
+  font-size: 1.1rem;
+}
+
+.card-discount {
+  font-size: 0.9rem;
+  color: #0b0a0a;
+  text-decoration: line-through;
+}
+
+.card-badge {
+  font-size: 0.85rem;
+  background: linear-gradient(90deg, #fbdfb2, #ffffff);
+  font-weight: bold;
+  color: #1d1c1c;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.cashify-logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 30%;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-sm {
+  margin: 20px 0 20px 0;
+  width: 50%;
+  font-size: 12px;
+  background-color: rgb(11, 11, 99);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.rating {
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid rgb(229, 227, 223);
+}
+
+.rating-img {
+  width: 20px;
+  margin-bottom: 6px;
+}
+
+.btn-sm:hover {
+  background-color: rgb(11, 11, 99);
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.card-img-top {
+  width: 60%;
+  margin: 40px 50px;
+  object-fit: cover;
+}
+
+#refurbishedPhonesCarousel {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background-color: #42c8b7;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #36a99e;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+  .bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-item img {
+    height: 200px; /* Adjust height for smaller screens */
+  }
+}
+
+.service-card, .service-device {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .service-card, .service-device {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#buyrefurbishedphones .d-flex {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#buyrefurbishedphones .d-flex > div {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  #buyrefurbishedphones .d-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
