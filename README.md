@@ -73,3 +73,21 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
  
  
 ### Home Page 
+
+![Screenshot 2025-02-11 200818](https://github.com/user-attachments/assets/443714c8-3819-4ffd-ad9b-b999ed1f6086)
+
+
+### next 
+
+![Screenshot 2025-02-11 200834](https://github.com/user-attachments/assets/b34b6ee0-7763-4333-b2b1-bb25dfc2ceb9)
+
+
+
+![Screenshot 2025-02-11 200847](https://github.com/user-attachments/assets/6ba28619-d2df-4515-9304-4270e102d935)
+
+
+### footer -
+![Screenshot 2025-02-11 200900](https://github.com/user-attachments/assets/838fb6b1-1316-4c00-8fb6-3ab8b78256bb)
+
+
+
